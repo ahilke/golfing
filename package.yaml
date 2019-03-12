@@ -1,14 +1,13 @@
 name:                golfing
-version:             0.1.0.0
-github:              "githubuser/golfing"
-license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2019 Author name here"
+version:             0.1.0
+github:              "ahilke/golfing"
+license:             MIT
+author:              "Arno Hilke"
+maintainer:          "arno.hilke@tum.de"
+copyright:           "2019 Arno Hilke"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -26,16 +25,6 @@ library:
   source-dirs: src
 
 executables:
-  golfing-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - golfing
-
   divisor-exe:
     main:                Main.hs
     source-dirs:         src/Divisor
@@ -44,16 +33,5 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     - -main-is Divisor.Main
-    dependencies:
-    - golfing
-
-tests:
-  golfing-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
     dependencies:
     - golfing
