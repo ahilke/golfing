@@ -36,6 +36,17 @@ executables:
     dependencies:
     - golfing
 
+  divisor-exe:
+    main:                Main.hs
+    source-dirs:         src/Divisor
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Divisor.Main
+    dependencies:
+    - golfing
+
 tests:
   golfing-test:
     main:                Spec.hs
