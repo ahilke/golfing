@@ -17,5 +17,5 @@ divisor_lines = [intercalate " " divisor_list | divisor_list <- divisors]
 divisor_output :: String
 divisor_output = intercalate "\n" divisor_lines
 
-main :: IO()
+main :: IO ()
 main = putStr divisor_output
